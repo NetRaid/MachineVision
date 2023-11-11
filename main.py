@@ -13,17 +13,19 @@
 
 import cv2
 import numpy as np
+from matplotlib import pyplot as plt
 
 # создается объект с именем image куда помещается изображение test2
 # используется библиотека CV2 (opencv) метод imread, он загружает изображение
 # в объект
 # 1. Файл с изображением помещени в папку с проектом
 # 2 указать полный путь до изоражения
-image = cv2.imread("D:/ZreieMashin/test.jpg")
+image = cv2.imread("test.jpg")
 # создание окна для вывода изображния "original" подпись окна
 cv2.imshow("original", image)
 # Выводи изображение и ожидам нажатия любой клавиши
-cv2.waitKey(0)
+cv2.waitKey(0) 
+cv2.destroyAllWindows()                       ##### # закрываем окно
 
 # Создаем объект blurred_image и применяю Гаусов фильтр размытия
 blurred_image = cv2.GaussianBlur(image, (1, 1), 0)
