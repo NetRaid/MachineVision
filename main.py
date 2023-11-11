@@ -19,7 +19,7 @@ import numpy as np
 # в объект
 # 1. Файл с изображением помещени в папку с проектом
 # 2 указать полный путь до изоражения
-image = cv2.imread("test.jpg")
+image = cv2.imread("D:/ZreieMashin/test.jpg")
 # создание окна для вывода изображния "original" подпись окна
 cv2.imshow("original", image)
 # Выводи изображение и ожидам нажатия любой клавиши
